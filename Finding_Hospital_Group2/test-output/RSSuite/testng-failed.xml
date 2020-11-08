@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RSSuite]">
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="SmokeAndRegression.Regression">
+        <methods>
+          <include name="buyPlusMembership"/>
+          <include name="handleIFrame"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- SmokeAndRegression.Regression -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [RSSuite] -->

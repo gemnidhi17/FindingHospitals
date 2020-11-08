@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]">
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="SmokeAndRegression.Smoke">
+        <methods>
+          <include name="bookAppointment"/>
+          <include name="openURL"/>
+          <include name="reachingDiagnostics"/>
+          <include name="signUp"/>
+          <include name="ConsultDoctor"/>
+          <include name="BuyMedicine"/>
+          <include name="displayNames"/>
+          <include name="setup"/>
+          <include name="flush"/>
+          <include name="userLogout"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- SmokeAndRegression.Smoke -->
+      <class name="tests.Diagnostics">
+        <methods>
+          <include name="displayNames"/>
+          <include name="setup"/>
+          <include name="WriteInExcel"/>
+          <include name="flush"/>
+          <include name="reachingDiagnostics"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- tests.Diagnostics -->
+      <class name="tests.CorporateWellness">
+        <methods>
+          <include name="WriteInExcel"/>
+          <include name="givingInputs"/>
+          <include name="setup"/>
+          <include name="switchingWindow"/>
+          <include name="flush"/>
+          <include name="Backtohomepage"/>
+          <include name="openURL"/>
+          <include name="openingCorporateWellness"/>
+        </methods>
+      </class> <!-- tests.CorporateWellness -->
+      <class name="SmokeAndRegression.Regression">
+        <methods>
+          <include name="buyPlusMembership"/>
+          <include name="handleIFrame"/>
+          <include name="setup"/>
+          <include name="openURL"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- SmokeAndRegression.Regression -->
+      <class name="tests.Hospital_Filter">
+        <methods>
+          <include name="flush"/>
+          <include name="setHospital"/>
+          <include name="allTimeOpen"/>
+          <include name="hasParking"/>
+          <include name="openURL"/>
+          <include name="StarRatings"/>
+          <include name="WriteInExcel"/>
+          <include name="setLocation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Hospital_Filter -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite2] -->

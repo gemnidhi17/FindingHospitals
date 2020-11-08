@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [smokeNregression]" parallel="tests">
+  <test thread-count="1" name="smoke(failed)" parallel="tests">
+    <classes>
+      <class name="SmokeAndRegression.Smoke">
+        <methods>
+          <include name="buyPlusMembership"/>
+          <include name="openURL"/>
+          <include name="driver"/>
+        </methods>
+      </class> <!-- SmokeAndRegression.Smoke -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+  <test thread-count="1" name="regression(failed)" parallel="tests">
+    <classes>
+      <class name="SmokeAndRegression.Regression">
+        <methods>
+          <include name="bookAppointment"/>
+          <include name="signUp"/>
+          <include name="openURL"/>
+          <include name="driver"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- SmokeAndRegression.Regression -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [smokeNregression] -->

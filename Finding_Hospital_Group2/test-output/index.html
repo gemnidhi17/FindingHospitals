@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-FindingHospital">
+              <span class="suite-name border-failed">FindingHospital</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-FindingHospital">
+                    <span>C:\Users\HP\eclipse-workspace\Finding_Hospital_Group2\testng2.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-FindingHospital">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-FindingHospital">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-FindingHospital">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-FindingHospital">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-FindingHospital">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-FindingHospital">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">34 methods, 1 failed,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FindingHospital" class="hide-methods failed suite-FindingHospital"> (hide)</a> <!-- hide-methods failed suite-FindingHospital -->
+                      <a href="#" panel-name="suite-FindingHospital" class="show-methods failed suite-FindingHospital"> (show)</a> <!-- show-methods failed suite-FindingHospital -->
+                    </span>
+                    <div class="method-list-content failed suite-FindingHospital">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="StarRatings">StarRatings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FindingHospital -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FindingHospital" class="hide-methods passed suite-FindingHospital"> (hide)</a> <!-- hide-methods passed suite-FindingHospital -->
+                      <a href="#" panel-name="suite-FindingHospital" class="show-methods passed suite-FindingHospital"> (show)</a> <!-- show-methods passed suite-FindingHospital -->
+                    </span>
+                    <div class="method-list-content passed suite-FindingHospital">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="Backtohomepage">Backtohomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="BuyMedicine">BuyMedicine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="ConsultDoctor">ConsultDoctor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="WriteInExcel">WriteInExcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="WriteInExcel">WriteInExcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Diagnostics" hash-for-method="WriteInExcel">WriteInExcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="allTimeOpen">allTimeOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="bookAppointment">bookAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Regression" hash-for-method="buyPlusMembership">buyPlusMembership</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Diagnostics" hash-for-method="displayNames">displayNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="displayNames">displayNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(ss, dd, , 9876543210)">givingInputs(ss, dd, , 9876543210)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(cc, dd, shag123@gmail.com, sss)">givingInputs(cc, dd, shag123@gmail.com, sss)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(ss, dd, shag123@gmail.com, )">givingInputs(ss, dd, shag123@gmail.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(cc, dd, sss, sss)">givingInputs(cc, dd, sss, sss)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(, dd, shag123@gmail.com, 9876543210)">givingInputs(, dd, shag123@gmail.com, 9876543210)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="givingInputs(ss, , shag123@gmail.com, 9876543210)">givingInputs(ss, , shag123@gmail.com, 9876543210)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Regression" hash-for-method="handleIFrame">handleIFrame</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="hasParking">hasParking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Diagnostics" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Regression" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="openingCorporateWellness">openingCorporateWellness</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Diagnostics" hash-for-method="reachingDiagnostics">reachingDiagnostics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="reachingDiagnostics">reachingDiagnostics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="setHospital">setHospital</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.Hospital_Filter" hash-for-method="setLocation">setLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="tests.CorporateWellness" hash-for-method="switchingWindow">switchingWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="userLogin">userLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FindingHospital" title="SmokeAndRegression.Smoke" hash-for-method="userLogout">userLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FindingHospital -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FindingHospital" class="panel FindingHospital">
+          <div class="suite-FindingHospital-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Hospital_Filter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="StarRatings">
+                  </a> <!-- StarRatings -->
+                  <span class="method-name">StarRatings</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 17, Size: 17
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at POM_Pages.HospitalsInBanglorePage.display(HospitalsInBanglorePage.java:132)
+	at tests.Hospital_Filter.StarRatings(Hospital_Filter.java:127)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-failed -->
+          <div class="suite-FindingHospital-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SmokeAndRegression.Regression</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPlusMembership">
+                  </a> <!-- buyPlusMembership -->
+                  <span class="method-name">buyPlusMembership</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="handleIFrame">
+                  </a> <!-- handleIFrame -->
+                  <span class="method-name">handleIFrame</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-passed -->
+          <div class="suite-FindingHospital-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SmokeAndRegression.Smoke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BuyMedicine">
+                  </a> <!-- BuyMedicine -->
+                  <span class="method-name">BuyMedicine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConsultDoctor">
+                  </a> <!-- ConsultDoctor -->
+                  <span class="method-name">ConsultDoctor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookAppointment">
+                  </a> <!-- bookAppointment -->
+                  <span class="method-name">bookAppointment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displayNames">
+                  </a> <!-- displayNames -->
+                  <span class="method-name">displayNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reachingDiagnostics">
+                  </a> <!-- reachingDiagnostics -->
+                  <span class="method-name">reachingDiagnostics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userLogin">
+                  </a> <!-- userLogin -->
+                  <span class="method-name">userLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userLogout">
+                  </a> <!-- userLogout -->
+                  <span class="method-name">userLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-passed -->
+          <div class="suite-FindingHospital-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CorporateWellness</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Backtohomepage">
+                  </a> <!-- Backtohomepage -->
+                  <span class="method-name">Backtohomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WriteInExcel">
+                  </a> <!-- WriteInExcel -->
+                  <span class="method-name">WriteInExcel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(ss, dd, , 9876543210)">
+                  </a> <!-- givingInputs(ss, dd, , 9876543210) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(ss, dd, , 9876543210)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(cc, dd, shag123@gmail.com, sss)">
+                  </a> <!-- givingInputs(cc, dd, shag123@gmail.com, sss) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(cc, dd, shag123@gmail.com, sss)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(ss, dd, shag123@gmail.com, )">
+                  </a> <!-- givingInputs(ss, dd, shag123@gmail.com, ) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(ss, dd, shag123@gmail.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(cc, dd, sss, sss)">
+                  </a> <!-- givingInputs(cc, dd, sss, sss) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(cc, dd, sss, sss)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(, dd, shag123@gmail.com, 9876543210)">
+                  </a> <!-- givingInputs(, dd, shag123@gmail.com, 9876543210) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(, dd, shag123@gmail.com, 9876543210)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="givingInputs(ss, , shag123@gmail.com, 9876543210)">
+                  </a> <!-- givingInputs(ss, , shag123@gmail.com, 9876543210) -->
+                  <span class="method-name">givingInputs</span>
+                  <span class="parameters">(ss, , shag123@gmail.com, 9876543210)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openingCorporateWellness">
+                  </a> <!-- openingCorporateWellness -->
+                  <span class="method-name">openingCorporateWellness</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="switchingWindow">
+                  </a> <!-- switchingWindow -->
+                  <span class="method-name">switchingWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-passed -->
+          <div class="suite-FindingHospital-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Diagnostics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WriteInExcel">
+                  </a> <!-- WriteInExcel -->
+                  <span class="method-name">WriteInExcel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displayNames">
+                  </a> <!-- displayNames -->
+                  <span class="method-name">displayNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reachingDiagnostics">
+                  </a> <!-- reachingDiagnostics -->
+                  <span class="method-name">reachingDiagnostics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-passed -->
+          <div class="suite-FindingHospital-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Hospital_Filter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WriteInExcel">
+                  </a> <!-- WriteInExcel -->
+                  <span class="method-name">WriteInExcel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="allTimeOpen">
+                  </a> <!-- allTimeOpen -->
+                  <span class="method-name">allTimeOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hasParking">
+                  </a> <!-- hasParking -->
+                  <span class="method-name">hasParking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setHospital">
+                  </a> <!-- setHospital -->
+                  <span class="method-name">setHospital</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setLocation">
+                  </a> <!-- setLocation -->
+                  <span class="method-name">setLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FindingHospital-class-passed -->
+        </div> <!-- panel FindingHospital -->
+        <div panel-name="test-xml-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\eclipse-workspace\Finding_Hospital_Group2\testng2.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FindingHospital&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Hospital_Filter&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.CorporateWellness&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Diagnostics&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SmokeAndRegression.Regression&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SmokeAndRegression.Smoke&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
+&lt;/suite&gt; &lt;!-- FindingHospital --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FindingHospital</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FindingHospital</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">find</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">reachingDiagnostics</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FindingHospital</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FindingHospital');
+function tableData_FindingHospital() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(34);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'bookAppointment')
+data.setCell(0, 2, 'SmokeAndRegression.Smoke')
+data.setCell(0, 3, 29447);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'BuyMedicine')
+data.setCell(1, 2, 'SmokeAndRegression.Smoke')
+data.setCell(1, 3, 13536);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'StarRatings')
+data.setCell(2, 2, 'tests.Hospital_Filter')
+data.setCell(2, 3, 12379);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'givingInputs')
+data.setCell(3, 2, 'tests.CorporateWellness')
+data.setCell(3, 3, 10812);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'userLogout')
+data.setCell(4, 2, 'SmokeAndRegression.Smoke')
+data.setCell(4, 3, 8502);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'setHospital')
+data.setCell(5, 2, 'tests.Hospital_Filter')
+data.setCell(5, 3, 8035);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ConsultDoctor')
+data.setCell(6, 2, 'SmokeAndRegression.Smoke')
+data.setCell(6, 3, 7765);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'buyPlusMembership')
+data.setCell(7, 2, 'SmokeAndRegression.Regression')
+data.setCell(7, 3, 7759);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'givingInputs')
+data.setCell(8, 2, 'tests.CorporateWellness')
+data.setCell(8, 3, 7638);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'hasParking')
+data.setCell(9, 2, 'tests.Hospital_Filter')
+data.setCell(9, 3, 7583);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'givingInputs')
+data.setCell(10, 2, 'tests.CorporateWellness')
+data.setCell(10, 3, 7549);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'givingInputs')
+data.setCell(11, 2, 'tests.CorporateWellness')
+data.setCell(11, 3, 7528);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'givingInputs')
+data.setCell(12, 2, 'tests.CorporateWellness')
+data.setCell(12, 3, 7489);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'openURL')
+data.setCell(13, 2, 'SmokeAndRegression.Regression')
+data.setCell(13, 3, 7480);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'givingInputs')
+data.setCell(14, 2, 'tests.CorporateWellness')
+data.setCell(14, 3, 7468);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'openURL')
+data.setCell(15, 2, 'tests.Hospital_Filter')
+data.setCell(15, 3, 7120);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'openURL')
+data.setCell(16, 2, 'tests.Diagnostics')
+data.setCell(16, 3, 7027);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'openURL')
+data.setCell(17, 2, 'SmokeAndRegression.Smoke')
+data.setCell(17, 3, 6898);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'userLogin')
+data.setCell(18, 2, 'SmokeAndRegression.Smoke')
+data.setCell(18, 3, 6102);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'allTimeOpen')
+data.setCell(19, 2, 'tests.Hospital_Filter')
+data.setCell(19, 3, 5498);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'signUp')
+data.setCell(20, 2, 'SmokeAndRegression.Smoke')
+data.setCell(20, 3, 4710);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'handleIFrame')
+data.setCell(21, 2, 'SmokeAndRegression.Regression')
+data.setCell(21, 3, 4318);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'openURL')
+data.setCell(22, 2, 'tests.CorporateWellness')
+data.setCell(22, 3, 4284);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'reachingDiagnostics')
+data.setCell(23, 2, 'tests.Diagnostics')
+data.setCell(23, 3, 3849);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'openingCorporateWellness')
+data.setCell(24, 2, 'tests.CorporateWellness')
+data.setCell(24, 3, 3617);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'reachingDiagnostics')
+data.setCell(25, 2, 'SmokeAndRegression.Smoke')
+data.setCell(25, 3, 3171);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'setLocation')
+data.setCell(26, 2, 'tests.Hospital_Filter')
+data.setCell(26, 3, 832);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'displayNames')
+data.setCell(27, 2, 'tests.Diagnostics')
+data.setCell(27, 3, 765);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'displayNames')
+data.setCell(28, 2, 'SmokeAndRegression.Smoke')
+data.setCell(28, 3, 741);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'WriteInExcel')
+data.setCell(29, 2, 'tests.Hospital_Filter')
+data.setCell(29, 3, 729);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'WriteInExcel')
+data.setCell(30, 2, 'tests.Diagnostics')
+data.setCell(30, 3, 219);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'WriteInExcel')
+data.setCell(31, 2, 'tests.CorporateWellness')
+data.setCell(31, 3, 153);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Backtohomepage')
+data.setCell(32, 2, 'tests.CorporateWellness')
+data.setCell(32, 3, 46);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'switchingWindow')
+data.setCell(33, 2, 'tests.CorporateWellness')
+data.setCell(33, 3, 16);
+window.suiteTableData['FindingHospital']= { tableData: data, tableDiv: 'times-div-FindingHospital'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-FindingHospital">
+              </div> <!-- times-div-FindingHospital -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FindingHospital</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FindingHospital" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Hospital_Filter</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">5943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setLocation</span>
+                <span class="method-start">13063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setHospital</span>
+                <span class="method-start">13896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">allTimeOpen</span>
+                <span class="method-start">21933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hasParking</span>
+                <span class="method-start">27433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">StarRatings</span>
+                <span class="method-start">35016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WriteInExcel</span>
+                <span class="method-start">47397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">flush</span>
+                <span class="method-start">48137 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CorporateWellness</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48525 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">54452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openingCorporateWellness</span>
+                <span class="method-start">58737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">switchingWindow</span>
+                <span class="method-start">62355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(cc, dd, sss, sss)</span>
+                <span class="method-start">62376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(cc, dd, shag123@gmail.com, sss)</span>
+                <span class="method-start">73188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(, dd, shag123@gmail.com, 9876543210)</span>
+                <span class="method-start">80826 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(ss, , shag123@gmail.com, 9876543210)</span>
+                <span class="method-start">88355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(ss, dd, , 9876543210)</span>
+                <span class="method-start">95904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">givingInputs(ss, dd, shag123@gmail.com, )</span>
+                <span class="method-start">103393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Backtohomepage</span>
+                <span class="method-start">110861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WriteInExcel</span>
+                <span class="method-start">110908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">flush</span>
+                <span class="method-start">111062 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Diagnostics</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">112226 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">117377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reachingDiagnostics</span>
+                <span class="method-start">124404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">displayNames</span>
+                <span class="method-start">128255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WriteInExcel</span>
+                <span class="method-start">129020 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">flush</span>
+                <span class="method-start">129240 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SmokeAndRegression.Regression</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">130457 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">135808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">buyPlusMembership</span>
+                <span class="method-start">143288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">handleIFrame</span>
+                <span class="method-start">151048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">flush</span>
+                <span class="method-start">155367 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SmokeAndRegression.Smoke</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">156564 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">162443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userLogin</span>
+                <span class="method-start">169342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userLogout</span>
+                <span class="method-start">175445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp</span>
+                <span class="method-start">183949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bookAppointment</span>
+                <span class="method-start">188660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ConsultDoctor</span>
+                <span class="method-start">218110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BuyMedicine</span>
+                <span class="method-start">225876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reachingDiagnostics</span>
+                <span class="method-start">239412 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">displayNames</span>
+                <span class="method-start">242584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">flush</span>
+                <span class="method-start">243326 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

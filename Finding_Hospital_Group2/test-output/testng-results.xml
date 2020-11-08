@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="34" passed="33">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FindingHospital" duration-ms="244479" started-at="2020-11-07T19:23:13 IST" finished-at="2020-11-07T19:27:18 IST">
+    <groups>
+      <group name="find">
+        <method signature="Diagnostics.reachingDiagnostics()[pri:2, instance:tests.Diagnostics@2c039ac6]" name="reachingDiagnostics" class="tests.Diagnostics"/>
+      </group> <!-- find -->
+    </groups>
+    <test name="Test1" duration-ms="48494" started-at="2020-11-07T19:23:13 IST" finished-at="2020-11-07T19:24:02 IST">
+      <class name="tests.Hospital_Filter">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Hospital_Filter@1f57539]" name="setup" is-config="true" duration-ms="5928" started-at="2020-11-07T19:23:13 IST" finished-at="2020-11-07T19:23:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openURL()[pri:1, instance:tests.Hospital_Filter@1f57539]" name="openURL" duration-ms="7120" started-at="2020-11-07T19:23:19 IST" finished-at="2020-11-07T19:23:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="setLocation()[pri:2, instance:tests.Hospital_Filter@1f57539]" name="setLocation" duration-ms="832" started-at="2020-11-07T19:23:26 IST" finished-at="2020-11-07T19:23:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLocation -->
+        <test-method status="PASS" signature="setHospital()[pri:3, instance:tests.Hospital_Filter@1f57539]" name="setHospital" duration-ms="8035" started-at="2020-11-07T19:23:27 IST" finished-at="2020-11-07T19:23:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setHospital -->
+        <test-method status="PASS" signature="allTimeOpen()[pri:4, instance:tests.Hospital_Filter@1f57539]" name="allTimeOpen" duration-ms="5498" started-at="2020-11-07T19:23:35 IST" finished-at="2020-11-07T19:23:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allTimeOpen -->
+        <test-method status="PASS" signature="hasParking()[pri:5, instance:tests.Hospital_Filter@1f57539]" name="hasParking" duration-ms="7583" started-at="2020-11-07T19:23:41 IST" finished-at="2020-11-07T19:23:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hasParking -->
+        <test-method status="FAIL" signature="StarRatings()[pri:6, instance:tests.Hospital_Filter@1f57539]" name="StarRatings" duration-ms="12379" started-at="2020-11-07T19:23:48 IST" finished-at="2020-11-07T19:24:01 IST">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 17, Size: 17]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 17, Size: 17
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+at com.sun.proxy.$Proxy12.get(Unknown Source)
+at POM_Pages.HospitalsInBanglorePage.display(HospitalsInBanglorePage.java:132)
+at tests.Hospital_Filter.StarRatings(Hospital_Filter.java:127)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StarRatings -->
+        <test-method status="PASS" signature="WriteInExcel()[pri:7, instance:tests.Hospital_Filter@1f57539]" name="WriteInExcel" duration-ms="729" started-at="2020-11-07T19:24:01 IST" finished-at="2020-11-07T19:24:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInExcel -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:tests.Hospital_Filter@1f57539]" name="flush" is-config="true" duration-ms="357" started-at="2020-11-07T19:24:01 IST" finished-at="2020-11-07T19:24:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- tests.Hospital_Filter -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="63696" started-at="2020-11-07T19:24:02 IST" finished-at="2020-11-07T19:25:05 IST">
+      <class name="tests.CorporateWellness">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CorporateWellness@1a1d6a08]" name="setup" is-config="true" duration-ms="5925" started-at="2020-11-07T19:24:02 IST" finished-at="2020-11-07T19:24:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openURL()[pri:0, instance:tests.CorporateWellness@1a1d6a08]" name="openURL" duration-ms="4284" started-at="2020-11-07T19:24:08 IST" finished-at="2020-11-07T19:24:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="openingCorporateWellness()[pri:2, instance:tests.CorporateWellness@1a1d6a08]" name="openingCorporateWellness" duration-ms="3617" started-at="2020-11-07T19:24:12 IST" finished-at="2020-11-07T19:24:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingCorporateWellness -->
+        <test-method status="PASS" signature="switchingWindow()[pri:3, instance:tests.CorporateWellness@1a1d6a08]" name="switchingWindow" duration-ms="16" started-at="2020-11-07T19:24:16 IST" finished-at="2020-11-07T19:24:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchingWindow -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="10812" started-at="2020-11-07T19:24:16 IST" data-provider="dataprovider" finished-at="2020-11-07T19:24:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sss]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sss]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="7638" started-at="2020-11-07T19:24:26 IST" data-provider="dataprovider" finished-at="2020-11-07T19:24:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shag123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sss]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="7528" started-at="2020-11-07T19:24:34 IST" data-provider="dataprovider" finished-at="2020-11-07T19:24:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shag123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="7549" started-at="2020-11-07T19:24:42 IST" data-provider="dataprovider" finished-at="2020-11-07T19:24:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shag123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="7489" started-at="2020-11-07T19:24:49 IST" data-provider="dataprovider" finished-at="2020-11-07T19:24:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="givingInputs(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CorporateWellness@1a1d6a08]" name="givingInputs" duration-ms="7468" started-at="2020-11-07T19:24:57 IST" data-provider="dataprovider" finished-at="2020-11-07T19:25:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shag123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givingInputs -->
+        <test-method status="PASS" signature="Backtohomepage()[pri:5, instance:tests.CorporateWellness@1a1d6a08]" name="Backtohomepage" duration-ms="46" started-at="2020-11-07T19:25:04 IST" finished-at="2020-11-07T19:25:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Backtohomepage -->
+        <test-method status="PASS" signature="WriteInExcel()[pri:6, instance:tests.CorporateWellness@1a1d6a08]" name="WriteInExcel" duration-ms="153" started-at="2020-11-07T19:25:04 IST" finished-at="2020-11-07T19:25:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInExcel -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:tests.CorporateWellness@1a1d6a08]" name="flush" is-config="true" duration-ms="1159" started-at="2020-11-07T19:25:04 IST" finished-at="2020-11-07T19:25:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- tests.CorporateWellness -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="18231" started-at="2020-11-07T19:25:05 IST" finished-at="2020-11-07T19:25:24 IST">
+      <class name="tests.Diagnostics">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Diagnostics@2c039ac6]" name="setup" is-config="true" duration-ms="5150" started-at="2020-11-07T19:25:05 IST" finished-at="2020-11-07T19:25:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openURL()[pri:1, instance:tests.Diagnostics@2c039ac6]" name="openURL" duration-ms="7027" started-at="2020-11-07T19:25:11 IST" finished-at="2020-11-07T19:25:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="reachingDiagnostics()[pri:2, instance:tests.Diagnostics@2c039ac6]" name="reachingDiagnostics" duration-ms="3849" started-at="2020-11-07T19:25:18 IST" finished-at="2020-11-07T19:25:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reachingDiagnostics -->
+        <test-method status="PASS" signature="displayNames()[pri:3, instance:tests.Diagnostics@2c039ac6]" name="displayNames" duration-ms="765" depends-on-groups="find" started-at="2020-11-07T19:25:21 IST" finished-at="2020-11-07T19:25:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayNames -->
+        <test-method status="PASS" signature="WriteInExcel()[pri:4, instance:tests.Diagnostics@2c039ac6]" name="WriteInExcel" duration-ms="219" started-at="2020-11-07T19:25:22 IST" finished-at="2020-11-07T19:25:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInExcel -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:tests.Diagnostics@2c039ac6]" name="flush" is-config="true" duration-ms="1217" started-at="2020-11-07T19:25:22 IST" finished-at="2020-11-07T19:25:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- tests.Diagnostics -->
+    </test> <!-- Test3 -->
+    <test name="Test4" duration-ms="26104" started-at="2020-11-07T19:25:24 IST" finished-at="2020-11-07T19:25:50 IST">
+      <class name="SmokeAndRegression.Regression">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmokeAndRegression.Regression@42d8062c]" name="setup" is-config="true" duration-ms="5351" started-at="2020-11-07T19:25:24 IST" finished-at="2020-11-07T19:25:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openURL()[pri:1, instance:SmokeAndRegression.Regression@42d8062c]" name="openURL" duration-ms="7480" started-at="2020-11-07T19:25:29 IST" finished-at="2020-11-07T19:25:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="buyPlusMembership()[pri:2, instance:SmokeAndRegression.Regression@42d8062c]" name="buyPlusMembership" duration-ms="7759" started-at="2020-11-07T19:25:36 IST" finished-at="2020-11-07T19:25:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPlusMembership -->
+        <test-method status="PASS" signature="handleIFrame()[pri:3, instance:SmokeAndRegression.Regression@42d8062c]" name="handleIFrame" duration-ms="4318" started-at="2020-11-07T19:25:44 IST" finished-at="2020-11-07T19:25:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleIFrame -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:SmokeAndRegression.Regression@42d8062c]" name="flush" is-config="true" duration-ms="1194" started-at="2020-11-07T19:25:49 IST" finished-at="2020-11-07T19:25:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- SmokeAndRegression.Regression -->
+    </test> <!-- Test4 -->
+    <test name="Test5" duration-ms="87916" started-at="2020-11-07T19:25:50 IST" finished-at="2020-11-07T19:27:18 IST">
+      <class name="SmokeAndRegression.Smoke">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="setup" is-config="true" duration-ms="5878" started-at="2020-11-07T19:25:50 IST" finished-at="2020-11-07T19:25:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openURL()[pri:1, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="openURL" duration-ms="6898" started-at="2020-11-07T19:25:56 IST" finished-at="2020-11-07T19:26:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="userLogin()[pri:2, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="userLogin" duration-ms="6102" started-at="2020-11-07T19:26:03 IST" finished-at="2020-11-07T19:26:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="userLogout()[pri:3, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="userLogout" duration-ms="8502" started-at="2020-11-07T19:26:09 IST" finished-at="2020-11-07T19:26:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="signUp()[pri:4, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="signUp" duration-ms="4710" started-at="2020-11-07T19:26:17 IST" finished-at="2020-11-07T19:26:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="bookAppointment()[pri:5, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="bookAppointment" duration-ms="29447" started-at="2020-11-07T19:26:22 IST" finished-at="2020-11-07T19:26:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointment -->
+        <test-method status="PASS" signature="ConsultDoctor()[pri:6, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="ConsultDoctor" duration-ms="7765" started-at="2020-11-07T19:26:51 IST" finished-at="2020-11-07T19:26:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConsultDoctor -->
+        <test-method status="PASS" signature="BuyMedicine()[pri:7, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="BuyMedicine" duration-ms="13536" started-at="2020-11-07T19:26:59 IST" finished-at="2020-11-07T19:27:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BuyMedicine -->
+        <test-method status="PASS" signature="reachingDiagnostics()[pri:8, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="reachingDiagnostics" duration-ms="3171" started-at="2020-11-07T19:27:13 IST" finished-at="2020-11-07T19:27:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reachingDiagnostics -->
+        <test-method status="PASS" signature="displayNames()[pri:9, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="displayNames" duration-ms="741" started-at="2020-11-07T19:27:16 IST" finished-at="2020-11-07T19:27:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayNames -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:SmokeAndRegression.Smoke@5f3a4b84]" name="flush" is-config="true" duration-ms="1153" started-at="2020-11-07T19:27:17 IST" finished-at="2020-11-07T19:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- SmokeAndRegression.Smoke -->
+    </test> <!-- Test5 -->
+  </suite> <!-- FindingHospital -->
+</testng-results>

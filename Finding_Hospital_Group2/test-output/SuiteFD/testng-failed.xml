@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteFD]">
+  <test thread-count="5" name="filter(failed)">
+    <classes>
+      <class name="tests.Hospital_Filter">
+        <methods>
+          <include name="flush"/>
+          <include name="setHospital"/>
+          <include name="display"/>
+          <include name="allTimeOpen"/>
+          <include name="hasParking"/>
+          <include name="openURL"/>
+          <include name="WriteInExcel"/>
+          <include name="setLocation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Hospital_Filter -->
+    </classes>
+  </test> <!-- filter(failed) -->
+  <test thread-count="5" name="diagnostic(failed)">
+    <classes>
+      <class name="tests.Diagnostics">
+        <methods>
+          <include name="displayNames"/>
+          <include name="setup"/>
+          <include name="WriteInExcel"/>
+          <include name="reachingDiagnostics"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- tests.Diagnostics -->
+    </classes>
+  </test> <!-- diagnostic(failed) -->
+</suite> <!-- Failed suite [SuiteFD] -->
